@@ -110,7 +110,7 @@ public class Bfs {
                 number++;
                 recursiveParent(vertex[x][y]);
                 if (number == 2) {
-                    System.out.println("Total de combustível: " + sumFuel + " :: dentro do while if"); 
+                    System.out.println("Total de combustível: " + sumFuel); 
                     break;
                 }
                 vertex[x][y].parent = null;
@@ -146,7 +146,7 @@ public class Bfs {
             if (queue.isEmpty() && number != 10){
                 if (number == 2) {
                     if (sumFuel != 0){
-                        System.out.println("Total de combustível: " + sumFuel + " :: dentro da lista vazia"); 
+                        System.out.println("Total de combustível: " + sumFuel); 
                         break;
                     }
                     else {
@@ -164,11 +164,6 @@ public class Bfs {
                 bfs(allVertexs, coordinateLastNumber);
                 break;
             }
-
         }
-        // if (number - 1 == 1) break;
     }
 }
-
-// VERIFICAR SE O PRIMEIRO NÃO EXISTE
-// VERIFICAR SE O ULTIMO NAO EXISTE.
