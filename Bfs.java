@@ -13,7 +13,6 @@ public class Bfs {
     public static int value;
     public static int[] coordinateLastNumber;
     public static int number = 2;
-    public static int armazenaValue = 1;
     public static int sumFuel = 0;
  
     public static void main(String[] args) {
@@ -101,7 +100,6 @@ public class Bfs {
                 allVertexs[i][j].visited = false;
             }
         }
-
     }
 
     private static void bfs(Vertex[][] vertex, int[] start) {
